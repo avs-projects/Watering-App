@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">KotlinProject</string>
+
+    <string name="detail_firstName">First Name :</string>
+    <string name="detail_secondName">Second Name :</string>
+    <string name="detail_frequencyWatering1">Frequency Watering 1 :</string>
+    <string name="detail_frequencyWatering2">Frequency Watering 2 :</string>
+    <string name="detail_frequencyNutrients1">Frequency Nutrients 1 :</string>
+    <string name="detail_frequencyNutrients2">Frequency Nutrients 2 :</string>
+    <string name="detail_dateLastWatering">Date Last Watering :</string>
+    <string name="detail_dateLastNutrients">Date Last Nutrients :</string>
+    <string name="detail_dateNextWatering">Date Next Watering :</string>
+    <string name="detail_dateNextNutrients">Date Next Nutrients :</string>
+
+    <string name="searchView_list">Search Plant</string>
+    <string name="plant_firstName_req">First Name <font color='#FF0000'>*</font></string>
+    <string name="plant_secondName_req">Second Name</string>
+    <string name="plant_frequencyWatering1_req">Frequency Watering 1 <font color='#FF0000'>*</font></string>
+    <string name="plant_frequencyWatering2_req">Frequency Watering 2 <font color='#FF0000'>*</font></string>
+    <string name="plant_frequencyNutrients1_req">Frequency Nutrients 1 <font color='#FF0000'>*</font></string>
+    <string name="plant_frequencyNutrients2_req">Frequency Nutrients 2 <font color='#FF0000'>*</font></string>
+    <string name="plant_dateLastWatering_req">Date Last Watering <font color='#FF0000'>*</font></string>
+    <string name="plant_dateLastNutrients_req">Date Last Nutrients <font color='#FF0000'>*</font></string>
+    <string name="plant_dateNextWatering_req">Date Next Watering <font color='#FF0000'>*</font></string>
+    <string name="plant_dateNextNutrients_req">Date Next Nutrients <font color='#FF0000'>*</font></string>
+    <string name="plant_imageUri_req">Uri <font color='#FF0000'>*</font></string>
+    <string name="save_action">Save</string>
+    <string name="select_image">Select Image</string>
+    <string name="plant_detail_fragment_title">Plant Details</string>
+
+    <string name="required" />
+
+    <string name="add_fragment_title">Add Plant</string>
+    <string name="edit_fragment_title">Edit Plant</string>
+
+    <string name="plant">Names</string>
+    <string name="date">Last (W/N) </string>
+    <string name="dateLastNutrients">Last (N) </string>
+    <string name="dateLastWatering">Last (W) </string>
+    <string name="dateNext">Next (W/N)</string>
+    <string name="dateNextNutrients">Next (N)</string>
+    <string name="dateNextWatering">Next (W)</string>
+
+    <string name="search">Search</string>
+
+    <string name="delete">Delete</string>
+    <string name="delete_question">Are you sure you want to delete ?</string>
+
+    <string name="watering_question">Choose you watering option : </string>
+    <string name="watering">Did you water ?</string>
+
+    <string name="forgetEditText">You forgot to enter information ! </string>
+    <string name="dateError">You can\'t time travel ! </string>
+
+    <string name="no">No</string>
+    <string name="ok">Ok</string>
+    <string name="yes">Yes</string>
+    <string name="no_1day">+1 Day</string>
+    <string name="no_ChooseDate">Choose Date</string>
+
+    <string name="edit_plant">Edit Plant</string>
+
+    <string name="add_new_plant">Add new plant</string>
+    <string name="go_to_alarm">Go to alarm</string>
+    <string name="go_to_list">Go to alarm</string>
+
+    <string name="title_activity_alarm">Alarm List</string>
+
+    <string name="todo">TODO</string>
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/PlantListFragment">
+
+    <fragment
+        android:id="@+id/PlantListFragment"
+        android:name="com.example.kotlinproject.list.fragments.PlantListFragment"
+        android:label="List"
+        tools:layout="@layout/fragment_plant_list">
+        <action
+            android:id="@+id/action_PlantListFragment_to_PlantDetailFragment"
+            app:destination="@id/PlantDetailFragment" />
+        <action
+            android:id="@+id/action_PlantListFragment_to_AddPlantFragment"
+            app:destination="@id/AddPlantFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/AddPlantFragment"
+        android:name="com.example.kotlinproject.list.fragments.AddPlantFragment"
+        android:label="Add or Update"
+        tools:layout="@layout/fragment_add_plant">
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="plant_id"
+            android:defaultValue="-1"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_AddPlantFragment_to_PlantListFragment"
+            app:destination="@id/PlantListFragment"
+            app:popUpTo="@id/PlantListFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/PlantDetailFragment"
+        android:name="com.example.kotlinproject.list.fragments.PlantDetailFragment"
+        android:label="Details"
+        tools:layout="@layout/fragment_plant_detail">
+        <argument
+            android:name="plant_id"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_PlantDetailFragment_to_AddPlantFragment"
+            app:destination="@id/AddPlantFragment" />
+    </fragment>
+</navigation>

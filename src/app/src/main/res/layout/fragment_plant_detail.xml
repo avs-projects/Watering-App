@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margin"
+    tools:context=".list.fragments.PlantDetailFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:paddingBottom="90dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:contentDescription="@string/todo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/plant_firstName_label"
+            style="@style/Widget.Inventory.TextView"
+            android:layout_width="wrap_content"
+            android:text="@string/detail_firstName"
+            app:layout_constraintBaseline_toBaselineOf="@+id/plant_firstName"
+            app:layout_constraintEnd_toStartOf="@+id/plant_firstName"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/plant_firstName"
+            style="@style/Widget.Inventory.TextView"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/margin_between_elements"
+            android:layout_marginTop="@dimen/margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/plant_firstName_label"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            tools:text="Screwdrivers" />
+
+        <TextView
+            android:id="@+id/plant_secondName_label"
+            style="@style/Widget.Inventory.TextView"
+            android:layout_width="wrap_content"
+            android:text="@string/detail_secondName"
+            app:layout_constraintBaseline_toBaselineOf="@+id/plant_secondName"
+            app:layout_constraintEnd_toStartOf="@+id/plant_secondName"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/plant_secondName"
+            style="@style/Widget.Inventory.TextView"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/margin_between_elements"
+            android:layout_marginTop="@dimen/margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/plant_secondName_label"
+            app:layout_constraintTop_toBottomOf="@+id/plant_firstName"
+            tools:text="Screwdrivers" />
+
+        <TextView
+            android:id="@+id/plant_frequencyWatering1_label"
+            style="@style/Widget.Inventory.TextView"
+            android:layout_width="wrap_content"
+            android:text="@string/detail_frequencyWatering1"
+            app:layout_constraintBaseline_toBaselineOf="@+id/plant_frequencyWatering1"
+            app:layout_constraintEnd_toStartOf="@+id/plant_frequencyWatering1"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/plant_frequencyWatering1"
+            style="@style/Widget.Inventory.TextView"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/margin_between_elements"
+            android:layout_marginTop="@dimen/margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/plant_frequencyWatering1_label"
+            app:layout_constraintTop_toBottomOf="@+id/plant_secondName"
+            tools:text="Screwdrivers" />
+
+        <TextView
+            android:id="@+id/plant_frequencyWatering2_label"
+            style="@style/Widget.Inventory.TextView"
+            android:layout_width="wrap_content"
+            android:text="@string/detail_frequencyWatering2"
+            app:layout_constraintBaseline_toBaselineOf="@+id/plant_frequencyWatering2"
+            app:layout_constraintEnd_toStartOf="@+id/plant_frequencyWatering2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/plant_frequencyWatering2"
+            style="@style/Widget.Inventory.TextView"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/margin_between_elements"
+            android:layout_marginTop="@dimen/margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/plant_frequencyWatering2_label"
+            app:layout_constraintTop_toBottomOf="@+id/plant_frequencyWatering1"
+            tools:text="Screwdrivers" />
+
+        <TextView
+            android:id="@+id/plant_dateLastWatering_label"
+            style="@style/Widget.Inventory.TextView"
+            android:layout_width="wrap_content"
+            android:text="@string/detail_dateLastWatering"
+            app:layout_constraintBaseline_toBaselineOf="@+id/plant_dateLastWatering"
+            app:layout_constraintEnd_toStartOf="@+id/plant_dateLastWatering"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/plant_dateLastWatering"
+            style="@style/Widget.Inventory.TextView"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/margin_between_elements"
+            android:layout_marginTop="@dimen/margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/plant_dateLastWatering_label"
+            app:layout_constraintTop_toBottomOf="@+id/plant_frequencyWatering2"
+            tools:text="Screwdrivers" />
+
+        <TextView
+            android:id="@+id/plant_dateLastNutrients_label"
+            style="@style/Widget.Inventory.TextView"
+            android:layout_width="wrap_content"
+            android:text="@string/detail_dateLastNutrients"
+            app:layout_constraintBaseline_toBaselineOf="@+id/plant_dateLastNutrients"
+            app:layout_constraintEnd_toStartOf="@+id/plant_dateLastNutrients"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/plant_dateLastNutrients"
+            style="@style/Widget.Inventory.TextView"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/margin_between_elements"
+            android:layout_marginTop="@dimen/margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/plant_dateLastNutrients_label"
+            app:layout_constraintTop_toBottomOf="@+id/plant_dateLastWatering"
+            tools:text="Screwdrivers" />
+
+        <TextView
+            android:id="@+id/plant_dateNextWatering_label"
+            style="@style/Widget.Inventory.TextView"
+            android:layout_width="wrap_content"
+            android:text="@string/detail_dateNextWatering"
+            app:layout_constraintBaseline_toBaselineOf="@+id/plant_dateNextWatering"
+            app:layout_constraintEnd_toStartOf="@+id/plant_dateNextWatering"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/plant_dateNextWatering"
+            style="@style/Widget.Inventory.TextView"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/margin_between_elements"
+            android:layout_marginTop="@dimen/margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/plant_dateNextWatering_label"
+            app:layout_constraintTop_toBottomOf="@+id/plant_dateLastNutrients"
+            tools:text="Screwdrivers" />
+
+        <TextView
+            android:id="@+id/plant_dateNextNutrients_label"
+            style="@style/Widget.Inventory.TextView"
+            android:layout_width="wrap_content"
+            android:text="@string/detail_dateNextNutrients"
+            app:layout_constraintBaseline_toBaselineOf="@+id/plant_dateNextNutrients"
+            app:layout_constraintEnd_toStartOf="@+id/plant_dateNextNutrients"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/plant_dateNextNutrients"
+            style="@style/Widget.Inventory.TextView"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/margin_between_elements"
+            android:layout_marginTop="@dimen/margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/plant_dateNextNutrients_label"
+            app:layout_constraintTop_toBottomOf="@+id/plant_dateNextWatering"
+            tools:text="Screwdrivers" />
+
+        <Button
+            android:id="@+id/delete_plant"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin"
+            android:text="@string/delete"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/edit_plant"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/plant_dateNextNutrients" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/edit_plant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:contentDescription="@string/edit_plant"
+            android:src="@drawable/ic_edit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/delete_plant"
+            app:layout_constraintVertical_bias="0.0"
+            app:tint="@android:color/white" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
